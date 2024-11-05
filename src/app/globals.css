@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+    .image-white {
+        filter: brightness(0) invert(1);
+    }
+
+    .mask-gradient-b {
+        mask-image: linear-gradient(to bottom, black, transparent);
+    }
+
+    .mask-gradient-b {
+        mask-image: linear-gradient(to bottom, black, transparent);
+    }
+
+    .mask-gradient-t {
+        mask-image: linear-gradient(to top, black, transparent);
+    }
+}
