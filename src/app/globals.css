@@ -18,4 +18,24 @@
     .mask-gradient-t {
         mask-image: linear-gradient(to top, black, transparent);
     }
+
+    .mask-gradient-b2 {
+        mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+    }
+
+    .bg-custom-radial {
+        background: radial-gradient(100% 100% at top left, white, white, rgba(74, 32, 138, 0.5));
+    }
+
+    .bg-custom-circle {
+        background: radial-gradient(50% 50% at 16.8% 18.3%, white, rgb(184, 148, 255) 37.7%, rgb(24, 0, 66));
+    }
+
+    .bg-custom-circle-big {
+        background: radial-gradient(75% 75% at center center, rgba(140, 69, 255, 50%) 15%, rgba(14, 0, 36, 50%) 78%, transparent);
+    }
+
+    .shadow-circle {
+        box-shadow: -20px -20px 50px rgba(255, 255, 255, 0.5), -20px -20px 80px rgba(255, 255, 255, 0.1), 0 0 50px rgb(140, 69, 255);
+    }
 }
