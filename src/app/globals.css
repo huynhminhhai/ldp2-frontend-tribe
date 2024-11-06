@@ -23,6 +23,10 @@
         mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
     }
 
+    .mask-gradient-hori-black {
+        mask-image: linear-gradient(to right, transparent, #000 20%, #000 80%, transparent);
+    }
+
     .bg-custom-radial {
         background: radial-gradient(100% 100% at top left, white, white, rgba(74, 32, 138, 0.5));
     }
