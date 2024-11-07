@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image";
+import {motion} from 'framer-motion'
 
 const testimonials = [
   {
@@ -36,9 +38,21 @@ export const Testimonials = () => {
           Our revolutionary AI SEO tools have transformed our client&#39;s strategies.
         </p>
         <div className="overflow-hidden mt-10 mask-gradient-hori-black">
-          <div className="flex gap-5">
+          <motion.div
+            initial={{
+              translateX: '-50%'
+            }}
+            animate={{
+              translateX: '0%'
+            }}
+            transition={{
+              duration: 30,
+              repeat: Infinity,
+              ease: 'linear'
+            }}
+            className="flex gap-5 pr-5 flex-none translate-x-1/2">
             {
-              testimonials.map((item, i) => (
+              [...testimonials, ...testimonials].map((item, i) => (
                 <div key={i} className="border border-white/15 p-6 md:p-10 rounded-xl bg-linear-card max-w-xs md:max-w-md flex-none">
                   <div className="text-lg tracking-tight md:text-2xl">{item.text}</div>
                   <div className="flex items-center gap-3 mt-5">
@@ -53,7 +67,7 @@ export const Testimonials = () => {
                 </div>
               ))
             }
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
