@@ -5,8 +5,8 @@ import { useRef } from "react";
 
 export const Hero = () => {
 
-  const sectionRef = useRef(null)
-  const {scrollYProgress} =  useScroll({
+  const sectionRef = useRef<HTMLElement>(null)
+  const {scrollYProgress} = useScroll({
     target: sectionRef,
     offset: ['start end', 'end start']
   })
@@ -15,6 +15,7 @@ export const Hero = () => {
 
   return (
     <motion.section
+      ref={sectionRef}
       animate={{
         backgroundPositionX: '100vw',
       }}
