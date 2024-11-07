@@ -56,4 +56,8 @@
     .bg-linear-card {
         background: linear-gradient(to bottom left, rgb(140, 69, 255, .3), black);
     }
+
+    .mask-gradient-calltoaction {
+        mask-image: radial-gradient(50% 50% at 50% 35%, #000, transparent);
+    }
 }
